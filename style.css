@@ -1,0 +1,30 @@
+#MainContent
+{
+	background-color: yellow;
+	width: 95%;
+	height: 95%;
+}
+.Header
+{
+	background-color: blue;
+	position: relative;
+	width: 80%;
+	height: 10%;
+	left: 10%;
+}
+.Main
+{
+	background-color: red;
+	position: relative;
+	width: 80%;
+	height: 80%;
+	left: 10%;
+}
+.Footer
+{
+	background-color: green;
+	position: relative;
+	width: 80%;
+	height: 10%;
+	left: 10%;	
+}
