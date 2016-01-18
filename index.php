@@ -19,6 +19,6 @@
 	</body>
 	<footer>
 		<script>rawData=<?PHP echo("TEST"); ?></script>
-		<script src="script.php"></script>
+		<script src="script.js"></script>
 	</footer>
 </html>
