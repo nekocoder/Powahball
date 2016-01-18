@@ -3,9 +3,9 @@ var source="http://www.powerball.com/powerball/winnums-text.txt&callback=?";
 
 function start()
 {
-		ScrapeData();
-		ParseData();
-		InjectData();
+	ScrapeData();
+	ParseData();
+	InjectData();
 }
 function ScrapeData()
 {
