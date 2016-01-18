@@ -19,6 +19,8 @@ function ParseData()
 }
 function InjectData()
 {
+	alert(rawData);
+	
 	var pageElement = document.getElementById("FilteredContent");	
 	pageElement.innerHTML=rawData;
 }
