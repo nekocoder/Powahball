@@ -1,5 +1,7 @@
-var rawData="FAILUE";
+var rawData="FAILURE";
 var source="http://www.powerball.com/powerball/winnums-text.txt&callback=?";
+
+start();
 
 function start()
 {
@@ -9,8 +11,9 @@ function start()
 }
 function ScrapeData()
 {
-	jQuery.get(source, function(data) {
-	rawData = data;});
+	<?PHP
+		
+	?>
 }
 function ParseData()
 {
@@ -18,7 +21,6 @@ function ParseData()
 }
 function InjectData()
 {
-	var pageElement = document.getElementById("FilteredContent");
-	alert(pageElement);
-	//pageElement.innerHTML=rawData;
+	var pageElement = document.getElementById("FilteredContent");	
+	pageElement.innerHTML=rawData;
 }
