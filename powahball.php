@@ -18,6 +18,7 @@
 		</div>
 	</body>
 	<footer>
+		<script>rawData=<?PHP echo("TEST"); ?></script>
 		<script src="script.php"></script>
 	</footer>
 </html>

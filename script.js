@@ -1,4 +1,4 @@
-var rawData="FAILURE";
+//var rawData="FAILURE";
 var source="http://www.powerball.com/powerball/winnums-text.txt&callback=?";
 
 start();
@@ -11,9 +11,7 @@ function start()
 }
 function ScrapeData()
 {
-	<?PHP
-		
-	?>
+	
 }
 function ParseData()
 {
