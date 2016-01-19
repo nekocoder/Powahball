@@ -34,7 +34,7 @@
 					$info=curl_getinfo($URLHandle);
 				
 				//parse out results
-					echo('rawData="'.$result.'";');
+					//echo('rawData="'.$result.'";');
 					/*foreach($result as $value)
 					{
 						echo('rawData.push('.$value.');');
@@ -50,8 +50,7 @@
 					//echo "Error: " . $error . "<br/>";
 					//print_r(curl_getinfo($URLHandle));
 					//echo "Current Directory: ".getcwd();
-					//echo "</pre>";
-					
+					//echo "</pre>";					
 			?>		
 		</script>
 		<script src="script.js"></script>
