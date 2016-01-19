@@ -20,6 +20,7 @@
 	<footer>
 		<script>
 			alert("test");
+			rawData="FAILURE";
 			<?PHP
 				//Set URL and make handle
 					$URL="http://www.powerball.com/powerball/winnums-text.txt";
@@ -53,6 +54,6 @@
 					//echo "</pre>";					
 			?>		
 		</script>
-		<script src="script.js"></script>
+		<script src="script.js" onLoad="start" ></script>
 	</footer>
 </html>
