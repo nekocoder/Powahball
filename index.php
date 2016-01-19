@@ -37,7 +37,20 @@
 					foreach($result as $value)
 					{
 						echo('rawData.push('.$value.');');
-					}					
+					}
+
+				//debug echo statements	
+					echo "<pre>";
+					echo "Url: " . $URL . "<br/>";
+					//echo "Cert: <br/>";
+					//echo count($info["certinfo"]);
+					//echo "<br/>";
+					echo "Result: " . $result."<br/>";
+					echo "Error: " . $error . "<br/>";
+					print_r(curl_getinfo($URLHandle));
+					//echo "Current Directory: ".getcwd();
+					echo "</pre>";
+					
 			?>
 		</script>
 		<script src="script.js"></script>
