@@ -26,7 +26,13 @@
 				$error=curl_error($URLHandle);
 				$info=curl_getinfo($URLHandle);
 			?>
-			rawData=<?PHP echo($info); ?>
+			rawData[];
+			<?PHP 
+				foreach($info as $value)
+				{
+					echo('rawData.push('+$value+')');					
+				}					
+			?>
 		</script>
 		<script src="script.js"></script>
 	</footer>
