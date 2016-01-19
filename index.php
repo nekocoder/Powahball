@@ -17,9 +17,7 @@
 			</div>
 		</div>
 	</body>
-	<footer>
-		<script>
-			rawData[];
+	<footer>		
 			<?PHP
 				//Set URL and make handle
 					$URL="http://www.powerball.com/powerball/winnums-text.txt";
@@ -52,6 +50,8 @@
 					echo "</pre>";
 					
 			?>
+		<script>
+			rawData[];
 		</script>
 		<script src="script.js"></script>
 	</footer>
