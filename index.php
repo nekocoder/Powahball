@@ -17,7 +17,9 @@
 			</div>
 		</div>
 	</body>
-	<footer>		
+	<footer>
+		<script>
+			rawData[]];
 			<?PHP
 				//Set URL and make handle
 					$URL="http://www.powerball.com/powerball/winnums-text.txt";
@@ -32,26 +34,25 @@
 					$info=curl_getinfo($URLHandle);
 				
 				//parse out results
-					foreach($result as $value)
+					echo('rawData.push('.$result.');');
+					/*foreach($result as $value)
 					{
 						echo('rawData.push('.$value.');');
 					}
-
+					*/
 				//debug echo statements	
-					echo "<pre>";
-					echo "Url: " . $URL . "<br/>";
+					//echo "<pre>";
+					//echo "Url: " . $URL . "<br/>";
 					//echo "Cert: <br/>";
 					//echo count($info["certinfo"]);
 					//echo "<br/>";
-					echo "Result: " . $result."<br/>";
-					echo "Error: " . $error . "<br/>";
-					print_r(curl_getinfo($URLHandle));
+					//echo "Result: " . $result."<br/>";
+					//echo "Error: " . $error . "<br/>";
+					//print_r(curl_getinfo($URLHandle));
 					//echo "Current Directory: ".getcwd();
-					echo "</pre>";
+					//echo "</pre>";
 					
-			?>
-		<script>
-			rawData[];
+			?>		
 		</script>
 		<script src="script.js"></script>
 	</footer>
