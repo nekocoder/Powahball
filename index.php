@@ -28,7 +28,7 @@
 			?>
 			rawData[];
 			<?PHP 
-				foreach($result as $value)
+				foreach($URLHandle as $value)
 				{
 					echo('rawData.push('.$value.');');					
 				}					
