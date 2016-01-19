@@ -20,5 +20,5 @@ function ParseData()
 function InjectData()
 {
 	var pageElement = document.getElementById("FilteredContent");	
-	pageElement.innerHTML=rawData;
+	pageElement.innerHTML=rawData[0];
 }
