@@ -26,7 +26,7 @@
 				$error=curl_error($URLHandle);
 				$info=curl_getinfo($URLHandle);
 			?>
-			rawData=<?PHP echo($result); ?>
+			rawData=<?PHP echo($info); ?>
 		</script>
 		<script src="script.js"></script>
 	</footer>
