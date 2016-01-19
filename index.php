@@ -41,7 +41,7 @@
 		</script>		
 		<script src="script.js"></script>
 	</head>
-	<body>
+	<body onLoad="Start()">
 		<div id="MainContent">
 			<div class="Header">
 				<p>NOTE: The creator of this page is not associated with the Multi State Lottery Association, nor is this page an official page made on the behalf of said association</p>
@@ -54,6 +54,6 @@
 			</div>
 		</div>
 	</body>
-	<footer onload="Start()">		
+	<footer>		
 	</footer>
 </html>
