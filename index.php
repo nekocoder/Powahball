@@ -4,7 +4,7 @@
 		<title>Powerball Quick Stats</title>
 		<link rel="stylesheet" href="style.css">
 		<script>
-			alert("test");
+			//alert("test");
 			rawData="FAILURE";
 			<?PHP
 				//Set URL and make handle
@@ -20,7 +20,7 @@
 					$info=curl_getinfo($URLHandle);
 				
 				//parse out results
-					//echo('rawData="'.$result.'";');
+					echo('rawData="'.$result.'";');
 					/*foreach($result as $value)
 					{
 						echo('rawData.push('.$value.');');

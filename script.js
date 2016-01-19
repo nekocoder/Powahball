@@ -3,22 +3,22 @@ var source="http://www.powerball.com/powerball/winnums-text.txt&callback=?";
 
 function Start()
 {
-	alert("START");
+	//alert("START");
 	ScrapeData();
 	ParseData();
 	InjectData();
 }
 function ScrapeData()
 {
-	alert("SCRAPING");
+	//alert("SCRAPING");
 }
 function ParseData()
 {
-	alert("PARSING");
+	//alert("PARSING");
 }
 function InjectData()
 {
-	alert(rawData);
+	//alert(rawData);
 	
 	var pageElement = document.getElementById("FilteredContent");
 	pageElement.innerHTML=rawData;
