@@ -49,11 +49,11 @@
 			<div class="Main">
 				<h5 id="FilteredContent"> Content</h5>
 			</div>
-			<div class="Footer" onLoad="Start">
+			<div class="Footer">
 				<h5> Created by Eryc Duhart </h5>
 			</div>
 		</div>
 	</body>
-	<footer>		
+	<footer onload="Start">		
 	</footer>
 </html>
