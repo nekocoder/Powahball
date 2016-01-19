@@ -34,7 +34,7 @@
 					$info=curl_getinfo($URLHandle);
 				
 				//parse out results
-					foreach($URLHandle as $value)
+					foreach($result as $value)
 					{
 						echo('rawData.push('.$value.');');
 					}					
