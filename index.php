@@ -28,12 +28,16 @@
 				//set transfer option so we get the actual contents
 					curl_setopt($URLHandle, CURLOPT_RETURNTRANSFER, TRUE);
 				
-				//query for url contents
+				//query for url contents and info on the request
 					$result=curl_exec($URLHandle);
-					
-				//$error=curl_error($URLHandle);
-				//$info=curl_getinfo($URLHandle);
-				//foreach($URLHandle as $value){echo('rawData.push('.$value.');');}					
+					$error=curl_error($URLHandle);
+					$info=curl_getinfo($URLHandle);
+				
+				//parse out results
+					foreach($URLHandle as $value)
+					{
+						echo('rawData.push('.$value.');');
+					}					
 			?>
 		</script>
 		<script src="script.js"></script>
