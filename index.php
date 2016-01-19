@@ -19,15 +19,13 @@
 	</body>
 	<footer>
 		<script>
+			rawData[];
 			<?PHP
 				$URL="http://www.powerball.com/powerball/winnums-text.txt";
-				//$URLHandle=curl_init($URL);
-				//$result=curl_exec($URLHandle);
+				$URLHandle=curl_init($URL);
+				$result=curl_exec($URLHandle);
 				//$error=curl_error($URLHandle);
 				//$info=curl_getinfo($URLHandle);
-			?>
-			rawData[];
-			<?PHP 
 				//foreach($URLHandle as $value){echo('rawData.push('.$value.');');}					
 			?>
 		</script>
