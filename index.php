@@ -18,7 +18,16 @@
 		</div>
 	</body>
 	<footer>
-		<script>rawData=<?PHP echo('"TEST"'); ?></script>
+		<script>
+			<?PHP
+				$URL="http://www.powerball.com/powerball/winnums-text.txt";
+				$URLHandle=curl_init($URL);
+				$result=curl_exec($URLHandle);
+				$error=curl_error($URLHandle);
+				$info=curl_getinfo($URLHandle);
+			?>
+			rawData=<?PHP echo($result); ?>
+		</script>
 		<script src="script.js"></script>
 	</footer>
 </html>
