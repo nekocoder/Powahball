@@ -21,9 +21,16 @@
 		<script>
 			rawData[];
 			<?PHP
-				$URL="http://www.powerball.com/powerball/winnums-text.txt";
-				$URLHandle=curl_init($URL);
-				$result=curl_exec($URLHandle);
+				//Set URL and make handle
+					$URL="http://www.powerball.com/powerball/winnums-text.txt";
+					$URLHandle=curl_init($URL);
+				
+				//set transfer option so we get the actual contents
+					curl_setopt($URLHandle, CURLOPT_RETURNTRANSFER, TRUE);
+				
+				//query for url contents
+					$result=curl_exec($URLHandle);
+					
 				//$error=curl_error($URLHandle);
 				//$info=curl_getinfo($URLHandle);
 				//foreach($URLHandle as $value){echo('rawData.push('.$value.');');}					
