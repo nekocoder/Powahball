@@ -30,7 +30,7 @@
 			<?PHP 
 				foreach($info as $value)
 				{
-					echo('rawData.push('+$value+')');					
+					echo('rawData.push('+$value+');');					
 				}					
 			?>
 		</script>
