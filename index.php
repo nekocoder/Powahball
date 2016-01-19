@@ -54,6 +54,6 @@
 			</div>
 		</div>
 	</body>
-	<footer onload="Start">		
+	<footer onload="Start()">		
 	</footer>
 </html>
