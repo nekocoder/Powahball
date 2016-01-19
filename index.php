@@ -19,7 +19,7 @@
 	</body>
 	<footer>
 		<script>
-			rawData[]];
+			rawData[];
 			<?PHP
 				//Set URL and make handle
 					$URL="http://www.powerball.com/powerball/winnums-text.txt";
