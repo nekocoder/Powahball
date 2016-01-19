@@ -5,7 +5,6 @@
 		<link rel="stylesheet" href="style.css">
 		<script>
 			//alert("test");
-			rawData="FAILURE";
 			<?PHP
 				//Set URL and make handle
 					$URL="http://www.powerball.com/powerball/winnums-text.txt";
@@ -20,7 +19,7 @@
 					$info=curl_getinfo($URLHandle);
 				
 				//parse out results
-					echo('rawData="'.$result.'";');
+					echo('window.rawData="'.$result.'";');
 					/*foreach($result as $value)
 					{
 						echo('rawData.push('.$value.');');

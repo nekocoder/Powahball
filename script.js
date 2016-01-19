@@ -21,5 +21,5 @@ function InjectData()
 	//alert(rawData);
 	
 	var pageElement = document.getElementById("FilteredContent");
-	pageElement.innerHTML=rawData;
+	pageElement.innerHTML=window.rawData;
 }
