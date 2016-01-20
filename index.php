@@ -4,7 +4,6 @@
 		<title>Powerball Quick Stats</title>
 		<link rel="stylesheet" href="style.css">
 		
-			
 			<?PHP
 				//Set URL and make handle
 					$URL="http://www.powerball.com/powerball/winnums-text.txt";
@@ -45,20 +44,21 @@
 					echo "data is ".gettype($parsedData);
 					print_r($parsedData);
 					echo "</pre>";					
-			?>		
+				?>
 		<script>
 			//alert("test");
-			window.rawData=[];
+			window.rawData=[];	
+			
 			<?PHP
 				//make temp array
-					echo "temp=[];"
+					echo ("temp=[];");
 				
 				//sift through the php array of parsed data and replicate it with 
 				//javascript commands that will rebuild it
 					foreach($parsedData as $value)
 					{
 						//Don't bother if array is empty or too small (it won't have data)
-							if(count($value>3)
+							if(count($value>3))
 							{
 								//clear temp
 									echo("temp=[];");
