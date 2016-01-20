@@ -20,10 +20,10 @@
 				
 				//parse out results
 					$data=explode("\r\n", $result);
+					$parsedData=array();
 					foreach($data as $value)
 					{
-						$value=explode("  ", $value);
-					}
+						array_push($parsedData,explode("  ", $value));					}
 					
 				//Assign to global Javascript variable	
 					//echo('window.rawData="'.$result.'";');
@@ -42,12 +42,13 @@
 					//echo "Error: " . $error . "<br/>";
 					//print_r(curl_getinfo($URLHandle));
 					//echo "Current Directory: ".getcwd();
-					echo "data is ".gettype($data);
-					print_r($data);
+					echo "data is ".gettype($parsedData);
+					print_r($parsedData);
 					echo "</pre>";					
 			?>		
 		<script>
 			//alert("test");
+			window.rawData=[];			
 		</script>		
 		<script src="script.js"></script>
 	</head>
