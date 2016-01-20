@@ -67,7 +67,14 @@
 									foreach($value as $subValue)
 									{
 										echo ("temp.push(");
-										echo ($subValue);
+										if(substr_count($subValue,"/")>0)
+										{
+											echo ('"'.$subValue.'"');
+										}
+										else
+										{
+											echo ($subValue);
+										}
 										echo (")\n");
 									}
 								//add temp array to master array		
