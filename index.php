@@ -30,7 +30,7 @@
 					}
 					*/
 				//debug echo statements	
-					//echo "<pre>";
+					echo "<pre>";
 					//echo "Url: " . $URL . "<br/>";
 					//echo "Cert: <br/>";
 					//echo count($info["certinfo"]);
@@ -41,7 +41,7 @@
 					//echo "Current Directory: ".getcwd();
 					echo "data is ".gettype($data);
 					print_r($data);
-					//echo "</pre>";					
+					echo "</pre>";					
 			?>		
 		<script>
 			//alert("test");
