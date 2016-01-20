@@ -3,8 +3,8 @@
 	<head>
 		<title>Powerball Quick Stats</title>
 		<link rel="stylesheet" href="style.css">
-		<script>
-			//alert("test");
+		
+			
 			<?PHP
 				//Set URL and make handle
 					$URL="http://www.powerball.com/powerball/winnums-text.txt";
@@ -41,6 +41,8 @@
 					echo "Parsed Data: ".$data."<br/>";
 					echo "</pre>";					
 			?>		
+		<script>
+			//alert("test");
 		</script>		
 		<script src="script.js"></script>
 	</head>
