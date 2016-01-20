@@ -48,7 +48,34 @@
 			?>		
 		<script>
 			//alert("test");
-			window.rawData=[];			
+			window.rawData=[];
+			<?PHP
+				//make temp array
+					echo "temp=[];"
+				
+				//sift through the php array of parsed data and replicate it with 
+				//javascript commands that will rebuild it
+					foreach($parsedData as $value)
+					{
+						//Don't bother if array is empty or too small (it won't have data)
+							if(count($value>3)
+							{
+								//clear temp
+									echo("temp=[];");
+								
+								//add elements to temp
+									foreach($value as $subValue)
+									{
+										echo ("temp.push(");
+										echo ($subValue);
+										echo (")");
+									}
+								//add temp array to master array		
+									echo ("window.rawData.push(temp)");						
+							}
+					}			
+			?>
+			
 		</script>		
 		<script src="script.js"></script>
 	</head>
