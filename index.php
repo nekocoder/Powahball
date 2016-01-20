@@ -58,7 +58,7 @@
 					foreach($parsedData as $value)
 					{
 						//Don't bother if array is empty or too small (it won't have data)
-							if(count($value>3))
+							if(count($value)>3)
 							{
 								//clear temp
 									echo("temp=[];");
@@ -68,10 +68,10 @@
 									{
 										echo ("temp.push(");
 										echo ($subValue);
-										echo (")");
+										echo (")\n");
 									}
 								//add temp array to master array		
-									echo ("window.rawData.push(temp)");						
+									echo ("window.rawData.push(temp)\n");						
 							}
 					}			
 			?>
