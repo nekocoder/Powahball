@@ -38,8 +38,8 @@
 					//echo "Error: " . $error . "<br/>";
 					//print_r(curl_getinfo($URLHandle));
 					//echo "Current Directory: ".getcwd();
-					echo "data is ";
-					print_r($result);
+					echo "data is ".gettype($result);
+					//print_r($result);
 					//echo "</pre>";					
 			?>		
 		<script>
