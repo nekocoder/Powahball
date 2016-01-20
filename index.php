@@ -22,7 +22,8 @@
 					$parsedData=array();
 					foreach($data as $value)
 					{
-						array_push($parsedData,explode("  ", $value));					}
+						array_push($parsedData,explode("  ", $value));					
+					}
 					
 				//Assign to global Javascript variable	
 					//echo('window.rawData="'.$result.'";');
@@ -32,7 +33,7 @@
 					}
 					*/
 				//debug echo statements	
-					echo "<pre>";
+					//echo "<pre>";
 					//echo "Url: " . $URL . "<br/>";
 					//echo "Cert: <br/>";
 					//echo count($info["certinfo"]);
@@ -41,9 +42,9 @@
 					//echo "Error: " . $error . "<br/>";
 					//print_r(curl_getinfo($URLHandle));
 					//echo "Current Directory: ".getcwd();
-					echo "data is ".gettype($parsedData);
-					print_r($parsedData);
-					echo "</pre>";					
+					//echo "data is ".gettype($parsedData);
+					//print_r($parsedData);
+					//echo "</pre>";					
 				?>
 		<script>
 			//alert("test");

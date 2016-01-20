@@ -1,16 +1,48 @@
 //var rawData="FAILURE";
 var source="http://www.powerball.com/powerball/winnums-text.txt&callback=?";
+var wbOccurences=[];
+var pbOccurences=[];
+var totalGames=0;
 
 function Start()
 {
 	//alert("START");
-	ScrapeData();
+	InitializeCounters();
+	CountOccurences();
 	ParseData();
 	InjectData();
 }
-function ScrapeData()
+function InitializeCounters()
+{
+	for(var i=0;i<69;i++)
+	{
+		wbOccurences[i]=0;
+	}
+	
+	for(var i=0;i<26;i++)
+	{
+		pbOccurences[i]=0;
+	}
+	
+}
+function CountOccurences()
 {
 	//alert("SCRAPING");
+	
+	for(var a=0;a<window.rawData.length;a++)
+	{
+		//count white balls
+			for(var b=1;b<5;b++)
+			{
+				wbOccurences[window.rawData[b]]++;
+			}
+			
+		//count powerball
+			pbOccurences[window.rawData[6]]++;
+		
+		//increment total game counter
+			totalGames++;
+	}
 }
 function ParseData()
 {
@@ -21,5 +53,6 @@ function InjectData()
 	//alert(rawData);
 	
 	var pageElement = document.getElementById("FilteredContent");
-	pageElement.innerHTML=window.rawData;
+	pageElement.innerHTML="<h2> POWERBALL NUMBER OCCURENCES</h2>";
+	pageElement.innerHTML+=("<div>Total Games: "+totalGames+"</div>");
 }
