@@ -29,7 +29,7 @@
 					}
 					*/
 				//debug echo statements	
-					echo "<pre>";
+					//echo "<pre>";
 					//echo "Url: " . $URL . "<br/>";
 					//echo "Cert: <br/>";
 					//echo count($info["certinfo"]);
@@ -38,11 +38,8 @@
 					//echo "Error: " . $error . "<br/>";
 					//print_r(curl_getinfo($URLHandle));
 					//echo "Current Directory: ".getcwd();
-					foreach($data as $value)
-					{
-						echo $value."|";
-					}
-					echo "</pre>";					
+					echo "Count: ".count($data);
+					//echo "</pre>";					
 			?>		
 		<script>
 			//alert("test");
