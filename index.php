@@ -19,7 +19,7 @@
 					$info=curl_getinfo($URLHandle);
 				
 				//parse out results
-					$data=explode($result,"  ");
+					$data=explode($result,"\r");
 					
 				//Assign to global Javascript variable	
 					//echo('window.rawData="'.$result.'";');
@@ -38,8 +38,8 @@
 					//echo "Error: " . $error . "<br/>";
 					//print_r(curl_getinfo($URLHandle));
 					//echo "Current Directory: ".getcwd();
-					echo "data is ".gettype($result);
-					//print_r($result);
+					echo "data is ".gettype($data);
+					print_r($data);
 					//echo "</pre>";					
 			?>		
 		<script>
