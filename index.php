@@ -19,6 +19,9 @@
 					$info=curl_getinfo($URLHandle);
 				
 				//parse out results
+					$data=explode($result," ");
+					
+				//Assign to global Javascript variable	
 					echo('window.rawData="'.$result.'";');
 					/*foreach($result as $value)
 					{
@@ -26,7 +29,7 @@
 					}
 					*/
 				//debug echo statements	
-					//echo "<pre>";
+					echo "<pre>";
 					//echo "Url: " . $URL . "<br/>";
 					//echo "Cert: <br/>";
 					//echo count($info["certinfo"]);
@@ -35,7 +38,8 @@
 					//echo "Error: " . $error . "<br/>";
 					//print_r(curl_getinfo($URLHandle));
 					//echo "Current Directory: ".getcwd();
-					//echo "</pre>";					
+					echo "Parsed Data: ".$data."<br/>";
+					echo "</pre>";					
 			?>		
 		</script>		
 		<script src="script.js"></script>
