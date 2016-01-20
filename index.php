@@ -38,7 +38,7 @@
 					//echo "Error: " . $error . "<br/>";
 					//print_r(curl_getinfo($URLHandle));
 					//echo "Current Directory: ".getcwd();
-					echo "Count: ".count($data);
+					echo "data is ".getype($data);
 					//echo "</pre>";					
 			?>		
 		<script>
