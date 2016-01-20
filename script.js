@@ -55,4 +55,14 @@ function InjectData()
 	var pageElement = document.getElementById("FilteredContent");
 	pageElement.innerHTML="<h2> POWERBALL NUMBER OCCURENCES</h2>";
 	pageElement.innerHTML+=("<div>Total Games: "+totalGames+"</div>");
+	pageElement.innerHTML+=("<div>White Totals: </div>");
+	for(var i=0;i<wbOccurences.length;i++)
+	{
+		pageElement.innerHTML+=("<div>"+(i+1)+": "+wbOccurences[i]+"</div>");
+	}
+	pageElement.innerHTML+=("<div>Powerball Totals: </div>");
+	for(var i=0;i<pbOccurences.length;i++)
+	{
+		pageElement.innerHTML+=("<div>"+(i+1)+": "+pbOccurences[i]+"</div>");
+	}
 }
