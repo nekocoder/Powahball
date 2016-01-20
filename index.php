@@ -38,7 +38,10 @@
 					//echo "Error: " . $error . "<br/>";
 					//print_r(curl_getinfo($URLHandle));
 					//echo "Current Directory: ".getcwd();
-					echo "Parsed Data: ".$data."<br/>";
+					foreach($data as $value)
+					{
+						echo $value."|";
+					}
 					echo "</pre>";					
 			?>		
 		<script>
