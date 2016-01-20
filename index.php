@@ -19,8 +19,8 @@
 					$info=curl_getinfo($URLHandle);
 				
 				//parse out results
-					//$data=explode($result,"\r\n");
-					$data=explode("test  test  test","  ");
+					$data=explode("\r\n", $result);
+					//$data=explode("test  test  test","  ");
 					
 				//Assign to global Javascript variable	
 					//echo('window.rawData="'.$result.'";');
