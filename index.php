@@ -20,7 +20,10 @@
 				
 				//parse out results
 					$data=explode("\r\n", $result);
-					//$data=explode("test  test  test","  ");
+					foreach($data as $value)
+					{
+						$value=explode("  ", $value);
+					}
 					
 				//Assign to global Javascript variable	
 					//echo('window.rawData="'.$result.'";');
