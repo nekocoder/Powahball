@@ -40,7 +40,10 @@ function CountOccurences()
 			
 		//count powerball
 			//pbOccurences[(window.rawData[a][6]-1)]++;
-			//alert("PB "+window.rawData[a][6]+"^");
+			if(window.rawData[a][6])
+			{
+				//alert("PB "+window.rawData[a][6]+"^");
+			}
 		
 		//increment total game counter
 			totalGames++;
