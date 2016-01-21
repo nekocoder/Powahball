@@ -1,7 +1,7 @@
 //var rawData="FAILURE";
 var source="http://www.powerball.com/powerball/winnums-text.txt&callback=?";
-var wbOccurences=[];
-var pbOccurences=[];
+var wbOccurences=[69];
+var pbOccurences=[26];
 var totalGames=0;
 
 function Start()
