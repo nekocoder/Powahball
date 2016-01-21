@@ -34,12 +34,12 @@ function CountOccurences()
 		//count white balls
 			for(var b=1;b<5;b++)
 			{
-				wbOccurences[window.rawData[a][b]]++;
+				wbOccurences[(window.rawData[a][b]-1)]++;
 				//alert("WB "+window.rawData[a][b]+"^");
 			}
 			
 		//count powerball
-			pbOccurences[window.rawData[a][6]]++;
+			pbOccurences[(window.rawData[a][6]-1)]++;
 			//alert("PB "+window.rawData[a][6]+"^");
 		
 		//increment total game counter
