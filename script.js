@@ -63,7 +63,7 @@ function showInfo()
 		//Display one row at a time
 			for(var b=1;b<window.rawData[a].length;b++)
 			{
-				pageElement.innerHTML+=("["+a+"]["+b"] ("+window.rawData[a][b])+")");
+				pageElement.innerHTML+=("["+a+"]["+b"] ("+window.rawData[a][b]+")");
 				//alert("WB "+window.rawData[a][b]+"^");
 			}
 		pageElement.innerHTML+="</div>";
