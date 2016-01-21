@@ -1,7 +1,7 @@
 //var rawData="FAILURE";
 var source="http://www.powerball.com/powerball/winnums-text.txt&callback=?";
-var wbOccurences=[69];
-var pbOccurences=[26];
+var wbOccurences=[];
+var pbOccurences=[];
 var totalGames=0;
 
 function Start()
@@ -39,7 +39,7 @@ function CountOccurences()
 			}
 			
 		//count powerball
-			pbOccurences[(window.rawData[a][6]-1)]++;
+			//pbOccurences[(window.rawData[a][6]-1)]++;
 			//alert("PB "+window.rawData[a][6]+"^");
 		
 		//increment total game counter
