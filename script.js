@@ -11,6 +11,7 @@ function Start()
 	CountOccurences();
 	ParseData();
 	InjectData();
+	showInfo();
 }
 function InitializeCounters()
 {
@@ -32,7 +33,7 @@ function CountOccurences()
 	for(var a=0;a<window.rawData.length;a++)
 	{
 		//count white balls
-			for(var b=1;b<5;b++)
+			for(var b=1;b<6;b++)
 			{
 				wbOccurences[(window.rawData[a][b]-1)]++;
 				//alert("WB "+window.rawData[a][b]+"^");
@@ -42,12 +43,33 @@ function CountOccurences()
 			//pbOccurences[(window.rawData[a][6]-1)]++;
 			if(window.rawData[a][6]>26)
 			{
-				alert("PB "+window.rawData[a][6]+"^");
+				//alert("PB "+window.rawData[a][6]+"^");
 			}
 		
 		//increment total game counter
 			totalGames++;
 	}
+}
+function showInfo()
+{
+	var pageElement = document.getElementById("FilteredContent");
+	
+	pageElement.innerHTML+="<h2>POWERBALL RAW DATA</h2>";
+	pageElement.innerHTML+=("<div>Total Games: "+totalGames+"</div>");
+	for(var a=0;a<window.rawData.length;a++)
+	{
+		pageElement.innerHTML+="<div>";
+		
+		//Display one row at a time
+			for(var b=1;b<window.rawData[a].length;b++)
+			{
+				pageElement.innerHTML+=("["+a+"]["+b"] ("+window.rawData[a][b])+")");
+				//alert("WB "+window.rawData[a][b]+"^");
+			}
+		pageElement.innerHTML+="</div>";
+	}
+	
+	
 }
 function ParseData()
 {
