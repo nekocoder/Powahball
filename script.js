@@ -40,7 +40,7 @@ function CountOccurences()
 			}
 			
 		//count powerball
-			//pbOccurences[(window.rawData[a][6]-1)]++;
+			pbOccurences[(window.rawData[a][6]-1)]++;
 			if(window.rawData[a][6]>26)
 			{
 				//alert("PB "+window.rawData[a][6]+"^");
