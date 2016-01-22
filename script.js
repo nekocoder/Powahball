@@ -33,7 +33,7 @@ function InitializeCounters()
 		alert(topNumbers[i]);
 	}
 	
-	alert(topNumbers.length);
+	alert(topNumbers[0].type);
 }
 function CountOccurences()
 {
