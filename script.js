@@ -89,7 +89,19 @@ function CalcHighestNumbers()
 				topNumbers[a][1]=wbOccurences[b];
 			}
 		}
-	}		
+	}
+
+	for(var a=5;a=5;a++)
+	{
+		for(var b=0;b<pbOccurences.length;b++)
+		{
+			if(pbOccurences[b]>topNumbers[a][1])
+			{
+				topNumbers[a][0]=b;
+				topNumbers[a][1]=pbOccurences[b];
+			}
+		}
+	}
 		
 }
 function showInfo()
