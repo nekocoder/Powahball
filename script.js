@@ -31,6 +31,8 @@ function InitializeCounters()
 	{
 		topNumbers[i]=[0,0];
 	}
+	
+	alert(topNumbers.length);
 }
 function CountOccurences()
 {
