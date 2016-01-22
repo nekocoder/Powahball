@@ -67,7 +67,7 @@ function CalcHighestNumbers()
 	alert("CALC HIGHEST NUMBERS");
 	alert(topNumbers);
 	//topNumbers=[0][0]=0;
-	topNumbers=[0][1]=wbOccurences[0];
+	topNumbers[0][1]=wbOccurences[0];
 	
 	
 	for(var a=0;a<wbOccurences.length;a++)
