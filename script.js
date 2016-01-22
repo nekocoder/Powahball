@@ -29,11 +29,11 @@ function InitializeCounters()
 	
 	for(var i=0;i<6;i++)
 	{
-		topNumbers[i]=[0,0];
+		topNumbers[i].push([0,0]);
 		alert(topNumbers[i]);
 	}
 	
-	alert(topNumbers[0].type);
+	alert(topNumbers);
 }
 function CountOccurences()
 {
