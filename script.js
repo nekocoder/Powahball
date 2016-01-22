@@ -2,7 +2,7 @@
 var source="http://www.powerball.com/powerball/winnums-text.txt&callback=?";
 var wbOccurences=[];
 var pbOccurences=[];
-var topNumbers=new array();
+var topNumbers=[];
 var totalGames=0;
 
 function Start()
@@ -29,7 +29,7 @@ function InitializeCounters()
 	
 	for(var i=0;i<6;i++)
 	{
-		temp=new array();
+		temp=[];
 		temp.push(0);
 		temp.push(0);
 		topNumbers.push(temp);		
