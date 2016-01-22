@@ -10,8 +10,9 @@ function Start()
 	//alert("START");
 	InitializeCounters();
 	CountOccurences();
+	CalcHighestNumbers()
 	ParseData();
-	InjectData();
+	InjectData();	
 	//showInfo();
 }
 function InitializeCounters()
