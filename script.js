@@ -29,8 +29,10 @@ function InitializeCounters()
 	
 	for(var i=0;i<6;i++)
 	{
-		topNumbers[i]=[];
-		topNumbers[i].push([0,0]);
+		temp=[];
+		temp.push(0);
+		temp.push(0);
+		topNumbers.push(temp);		
 		alert(topNumbers[i]);
 	}
 	
