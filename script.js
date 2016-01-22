@@ -20,7 +20,7 @@ function InitializeCounters()
 		wbOccurences[i]=0;
 	}
 	
-	for(var i=0;i<26;i++)
+	for(var i=0;i<45;i++)
 	{
 		pbOccurences[i]=0;
 	}
@@ -66,6 +66,7 @@ function showInfo()
 				pageElement.innerHTML+=("["+a+"]["+b+"] ("+window.rawData[a][b]+")");
 				//alert("WB "+window.rawData[a][b]+"^");
 			}
+		
 		pageElement.innerHTML+="</div>";
 	}
 	
