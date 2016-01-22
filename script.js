@@ -2,6 +2,7 @@
 var source="http://www.powerball.com/powerball/winnums-text.txt&callback=?";
 var wbOccurences=[];
 var pbOccurences=[];
+var topNumbers=[];
 var totalGames=0;
 
 function Start()
@@ -25,6 +26,10 @@ function InitializeCounters()
 		pbOccurences[i]=0;
 	}
 	
+	for(var i=0;i<6;i++)
+	{
+		topNumbers[i]=[0,0];
+	}
 }
 function CountOccurences()
 {
@@ -49,6 +54,35 @@ function CountOccurences()
 		//increment total game counter
 			totalGames++;
 	}
+}
+function CalcHighestNumbers()
+{
+	
+	topNumbers=[0][0]=0;
+	topNumbers=[0][1]=wbOccurences[0];
+	
+	
+	for(var a=0;a<wbOccurences.length;a++)
+	{
+		if(wbOccurences[a]>topNumbers[0][1])
+		{
+			topNumbers[0][0]=a;
+			topNumbers[0][1]=wbOccurences[a];
+		}
+	}
+
+	for(var a=1;a<5;a++)
+	{
+		for(var b=0;b<wbOccurences.length;b++)
+		{
+			if(wbOccurences[b]>topNumbers[a][1] && wbOccurences[b]<topNumbers[a-1][1])
+			{
+				topNumbers[a][0]=b;
+				topNumbers[a][1]=wbOccurences[b];
+			}
+		}
+	}		
+		
 }
 function showInfo()
 {
@@ -93,4 +127,10 @@ function InjectData()
 	{
 		pageElement.innerHTML+=("<div>"+(i+1)+": "+pbOccurences[i]+"</div>");
 	}
+	pageElement.innerHTML+=("<div>Highest Frequency Numbers: </div>");
+	for(var i=0;i<topNumbers.length;i++)
+	{
+		pageElement.innerHTML+=("<div>"+topNumbers[(i+1)][0]+": "+topNumbers[i][1]+"</div>");
+	}
+	
 }
