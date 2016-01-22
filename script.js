@@ -33,7 +33,7 @@ function InitializeCounters()
 		temp.push(0);
 		temp.push(0);
 		topNumbers.push(temp);		
-		alert(typeof(topNumbers[i]));
+		alert(topNumbers[i]);
 	}
 	
 	//alert(topNumbers);
@@ -65,6 +65,7 @@ function CountOccurences()
 function CalcHighestNumbers()
 {
 	alert("CALC HIGHEST NUMBERS");
+	alert(topNumbers);
 	//topNumbers=[0][0]=0;
 	topNumbers=[0][1]=wbOccurences[0];
 	
