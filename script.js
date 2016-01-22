@@ -65,7 +65,7 @@ function CountOccurences()
 function CalcHighestNumbers()
 {
 	
-	topNumbers=[0][0]=0;
+	//topNumbers=[0][0]=0;
 	topNumbers=[0][1]=wbOccurences[0];
 	
 	
