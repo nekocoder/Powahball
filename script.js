@@ -11,7 +11,7 @@ function Start()
 	CountOccurences();
 	ParseData();
 	InjectData();
-	showInfo();
+	//showInfo();
 }
 function InitializeCounters()
 {
