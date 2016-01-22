@@ -65,7 +65,7 @@ function CountOccurences()
 function CalcHighestNumbers()
 {
 	alert("CALC HIGHEST NUMBERS");
-	alert(topNumbers);
+	//alert(topNumbers);
 	//topNumbers=[0][0]=0;
 	topNumbers[0][1]=wbOccurences[0];
 	
@@ -138,7 +138,7 @@ function InjectData()
 	pageElement.innerHTML+=("<div>Highest Frequency Numbers: </div>");
 	for(var i=0;i<topNumbers.length;i++)
 	{
-		pageElement.innerHTML+=("<div>"+topNumbers[(i+1)][0]+": "+topNumbers[i][1]+"</div>");
+		pageElement.innerHTML+=("<div>"+(topNumbers[i][0]+1)+": "+topNumbers[i][1]+"</div>");
 	}
 	
 }
