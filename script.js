@@ -32,8 +32,7 @@ function InitializeCounters()
 		temp=[];
 		temp.push(0);
 		temp.push(0);
-		topNumbers.push(temp);		
-		alert(topNumbers[i]);
+		topNumbers.push(temp);				
 	}
 	
 	//alert(topNumbers);
