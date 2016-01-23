@@ -135,6 +135,7 @@ function InjectData()
 	var pageElement = document.getElementById("FilteredContent");
 	pageElement.innerHTML="<h2> POWERBALL NUMBER OCCURENCES</h2>";
 	pageElement.innerHTML+=("<div>Total Games: "+totalGames+"</div>");
+	/*
 	pageElement.innerHTML+=("<div>White Totals: </div>");
 	for(var i=0;i<wbOccurences.length;i++)
 	{
@@ -145,6 +146,7 @@ function InjectData()
 	{
 		pageElement.innerHTML+=("<div>"+(i+1)+": "+pbOccurences[i]+"</div>");
 	}
+	*/
 	pageElement.innerHTML+=("<div>Highest Frequency Numbers: </div>");
 	for(var i=0;i<topNumbers.length;i++)
 	{
