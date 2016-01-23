@@ -40,7 +40,7 @@ function InitializeCounters()
 }
 function CountOccurences()
 {
-	alert("COUNTING DATA");
+	//alert("COUNTING DATA");
 	
 	for(var a=0;a<window.rawData.length;a++)
 	{
@@ -64,7 +64,7 @@ function CountOccurences()
 }
 function CalcHighestNumbers()
 {
-	alert("CALC HIGHEST NUMBERS");
+	//alert("CALC HIGHEST NUMBERS");
 	//alert(topNumbers);
 	//topNumbers=[0][0]=0;
 	topNumbers[0][1]=wbOccurences[0];
@@ -130,7 +130,7 @@ function ParseData()
 }
 function InjectData()
 {
-	alert("INJECTING DATA");
+	//alert("INJECTING DATA");
 	
 	var pageElement = document.getElementById("FilteredContent");
 	pageElement.innerHTML="<h2> POWERBALL NUMBER OCCURENCES</h2>";
