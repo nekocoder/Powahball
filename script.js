@@ -91,17 +91,15 @@ function CalcHighestNumbers()
 		}
 	}
 
-	for(var a=5;a=5;a++)
-	{
+	//Sift through powerball numbers
 		for(var b=0;b<pbOccurences.length;b++)
 		{
-			if(pbOccurences[b]>topNumbers[a][1])
+			if(pbOccurences[b]>topNumbers[5][1])
 			{
-				topNumbers[a][0]=b;
-				topNumbers[a][1]=pbOccurences[b];
+				topNumbers[5][0]=b;
+				topNumbers[5][1]=pbOccurences[b];
 			}
-		}
-	}
+		}	
 		
 }
 function showInfo()
