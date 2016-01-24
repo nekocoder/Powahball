@@ -159,7 +159,7 @@ function InjectData()
 		}
 	
 	//update most frequent powerball
-		pageElement=document.getElementById(("HighestWB"|i));
+		pageElement=document.getElementById(("HighestWB"+i));
 		pageElement.innerHTML=("<tspan>"+(topNumbers[i][0]+1)+"</tspan><tspan>("+topNumbers[i][1]+")</tspan>");
 	
 }
