@@ -146,10 +146,20 @@ function InjectData()
 		pageElement.innerHTML+=("<div>"+(i+1)+": "+pbOccurences[i]+"</div>");
 	}
 	*/
-	pageElement.innerHTML+=("<div>Highest Frequency Numbers: </div>");
-	for(var i=0;i<topNumbers.length;i++)
-	{
-		pageElement.innerHTML+=("<div>"+(topNumbers[i][0]+1)+": "+topNumbers[i][1]+"</div>");
-	}
+	
+	//add banner text
+		pageElement=document.getElementById("HighFrequencyBallRack");
+		pageElement.innerHTML+=("<h2>Highest Frequency Numbers: </h2>");
+		
+	//Update most frequent whiteball
+		for(var i=0;i<topNumbers.length-1;i++)
+		{
+			pageElement=document.getElementById(("HighestWB"|i));
+			pageElement.innerHTML=("<tspan>"+(topNumbers[i][0]+1)+"</tspan><tspan>("+topNumbers[i][1]+")</tspan>");
+		}
+	
+	//update most frequent powerball
+		pageElement=document.getElementById(("HighestWB"|i));
+		pageElement.innerHTML=("<tspan>"+(topNumbers[i][0]+1)+"</tspan><tspan>("+topNumbers[i][1]+")</tspan>");
 	
 }

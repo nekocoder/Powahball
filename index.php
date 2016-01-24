@@ -93,6 +93,14 @@
 				<p>NOTE: The creator of this page is not associated with the Multi State Lottery Association, nor is this page an official page made on the behalf of said association</p>
 			</div>
 			<div class="Main">
+				<svg id="HighFrequencyBallRack">
+					<circle id="HighestWB0" class="whiteball"></circle>
+					<circle id="HighestWB1" class="whiteball"></circle>
+					<circle id="HighestWB2" class="whiteball"></circle>
+					<circle id="HighestWB3" class="whiteball"></circle>
+					<circle id="HighestWB4" class="whiteball"></circle>
+					<circle id="HighestPB" class="powerball"></circle>
+				</svg>				
 				<div id="FilteredContent"> Content</div>
 			</div>
 			<div class="Footer">
