@@ -155,11 +155,11 @@ function InjectData()
 		for(var i=0;i<topNumbers.length-1;i++)
 		{
 			pageElement=document.getElementById(("HighestWB"+i));
-			pageElement.innerHTML=("<tspan>"+(topNumbers[i][0]+1)+"</tspan><tspan>("+topNumbers[i][1]+")</tspan>");
+			pageElement.innerHTML=("<text><tspan>"+(topNumbers[i][0]+1)+"</tspan><tspan>("+topNumbers[i][1]+")</tspan></text>");
 		}
 	
 	//update most frequent powerball
 		pageElement=document.getElementById("HighestPB");
-		pageElement.innerHTML=("<tspan>"+(topNumbers[5][0]+1)+"</tspan><tspan>("+topNumbers[5][1]+")</tspan>");
+		pageElement.innerHTML=("<text><tspan>"+(topNumbers[5][0]+1)+"</tspan><tspan>("+topNumbers[5][1]+")</tspan></text>");
 	
 }
